@@ -1,0 +1,160 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "poppins";
+}
+
+nav {
+  height: auto;
+  background: rgb(255, 81, 0);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+}
+nav .logo h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  color: #fff;
+}
+
+nav .logo i {
+  margin-right: 10px;
+}
+
+section.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
+}
+
+section.input .heading {
+  margin: 20px 0;
+  font-size: 20px;
+  color: rgb(255, 81, 0);
+}
+section.result h3 {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+section.input .form_input input {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  height: 40px;
+  width: 100%;
+}
+section.input .form_input button {
+  padding: 7px 20px;
+  height: 40px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width: 100%;
+  color: #fff;
+  background: rgb(255, 81, 0);
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+section.input .form_input button:hover{
+    background: rgb(207, 66, 0);
+}
+
+section.result {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 90%;
+}
+
+section.result .wrapper {
+  display: none;
+  height: auto;
+  width: auto;
+  padding: 20px 30px;
+  background: rgb(255, 81, 0);
+  color: #fff !important;
+}
+section.result p{
+    text-align: left;
+    margin-top: 20px;
+}
+
+section.result div {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 600px;
+}
+section.result h3 {
+  padding-bottom: 10px ;
+  border-bottom: 2px solid #fff;
+}
+
+section.result audio{
+    margin-top: 20px;
+    width: 90%;
+}
+section.result .not_found .heading {
+  margin: 20px 0;
+  text-align: center;
+  max-width: 600px;
+  max-width: 90%;
+}
+
+.suggested {
+  margin: 5px;
+  height: 40px;
+  width: auto;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: rgb(255, 81, 0);
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+}
+.audio {
+  margin-top: 20px;
+}
+.audio h3 {
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+.loading {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo h1 {
+    font-size: 25px;
+  }
+  nav {
+    padding: 20px 20px;
+  }
+  #search {
+    width: 100% !important;
+  }
+  .heading {
+    font-size: 20px !important;
+  }
+}
